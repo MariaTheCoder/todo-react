@@ -1,4 +1,4 @@
-import './CreateComponent.css';
+import "./CreateComponent.css";
 import { useState } from "react";
 
 export default function CreateComponent() {
@@ -7,7 +7,6 @@ export default function CreateComponent() {
   return (
     <div className="CreateComponent">
       <input
-        id="input_field"
         onChange={(event) => setTodo(event.target.value)}
         placeholder="new to-do"
         type="text"
