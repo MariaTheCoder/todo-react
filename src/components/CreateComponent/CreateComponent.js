@@ -1,3 +1,24 @@
+import { useState } from "react";
+
 export default function CreateComponent() {
-  return <h1>Hello World</h1>;
+  const [todo, setTodo] = useState("");
+
+  return (
+    <div className="CreateComponent">
+      <input
+        id="input_field"
+        onChange={(event) => setTodo(event.target.value)}
+        placeholder="new to-do"
+        type="text"
+      ></input>
+      <button
+        id="add_btn"
+        onClick={() => {
+          console.log(todo);
+        }}
+      >
+        Add
+      </button>
+    </div>
+  );
 }
