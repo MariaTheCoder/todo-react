@@ -1,3 +1,4 @@
+import './CreateComponent.css';
 import { useState } from "react";
 
 export default function CreateComponent() {
