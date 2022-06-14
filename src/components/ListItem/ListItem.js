@@ -1,11 +1,11 @@
 // import { useState } from "react";
-import "./ListComponent.css";
+import "./ListItem.css";
 
-export default function ListComponent(props) {
+export default function ListItem(props) {
   //   const [todo, setTodo] = useState("");
 
   return (
-    <div className="ListComponent">
+    <div className="ListItem">
       <label>
         <input type="checkbox" />
         {props.todo}

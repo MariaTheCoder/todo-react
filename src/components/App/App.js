@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import CreateComponent from "../CreateComponent/CreateComponent";
-import ListComponent from "../ListComponent/ListComponent";
+import List from "../List/List";
 
 function App() {
   const [todo, setTodo] = useState("");
@@ -9,7 +9,8 @@ function App() {
   return (
     <div>
       <CreateComponent setTodo={setTodo} />
-      <ListComponent todo={todo} />
+      {/* <ListItem todo={todo} /> */}
+      <List todo={todo} />
     </div>
   );
 }
