@@ -1,20 +1,20 @@
 import "./CreateComponent.css";
 import { useState } from "react";
 
-export default function CreateComponent() {
-  const [todo, setTodo] = useState("");
+export default function CreateComponent(props) {
+  const [tempTodo, setTempTodo] = useState("");
 
   return (
     <div className="CreateComponent">
       <input
-        onChange={(event) => setTodo(event.target.value)}
+        onChange={(event) => setTempTodo(event.target.value)}
         placeholder="new to-do"
         type="text"
       ></input>
       <button
         id="add_btn"
         onClick={() => {
-          console.log(todo);
+          props.setTodo(tempTodo);
         }}
       >
         Add
