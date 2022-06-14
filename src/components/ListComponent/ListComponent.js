@@ -6,7 +6,10 @@ export default function ListComponent(props) {
 
   return (
     <div className="ListComponent">
-      <h2>{props.todo}</h2>
+      <label>
+        <input type="checkbox" />
+        {props.todo}
+      </label>
     </div>
   );
 }
