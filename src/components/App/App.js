@@ -7,7 +7,7 @@ function App() {
   const [todo, setTodo] = useState("");
 
   return (
-    <div>
+    <div className="App">
       <CreateComponent setTodo={setTodo} />
       {/* <ListItem todo={todo} /> */}
       <List todo={todo} />
