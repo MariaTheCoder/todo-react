@@ -8,7 +8,7 @@ export default function ToDo(props) {
     <li className="ToDo">
       <label>
         <input type="checkbox" />
-        {props.todos}
+        {props.todo}
       </label>
     </li>
   );
