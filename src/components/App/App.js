@@ -4,13 +4,17 @@ import CreateComponent from "../CreateComponent/CreateComponent";
 import List from "../List/List";
 
 function App() {
-  const [todo, setTodo] = useState("");
+  const [todos, setTodos] = useState([]);
+
+  function addTodo(newTodo) {
+    setTodos([...todos, newTodo]);
+  }
 
   return (
     <div className="App">
-      <CreateComponent setTodo={setTodo} />
+      <CreateComponent addTodo={addTodo} />
       {/* <ListItem todo={todo} /> */}
-      <List todo={todo} />
+      <List todos={todos} />
     </div>
   );
 }

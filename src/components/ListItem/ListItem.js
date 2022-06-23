@@ -5,11 +5,11 @@ export default function ListItem(props) {
   //   const [todo, setTodo] = useState("");
 
   return (
-    <div className="ListItem">
+    <li className="ListItem">
       <label>
         <input type="checkbox" />
-        {props.todo}
+        {props.todos}
       </label>
-    </div>
+    </li>
   );
 }
