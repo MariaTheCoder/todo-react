@@ -1,4 +1,4 @@
-// import "./CreateComponent.css";
+import "./List.css";
 import ListItem from "../ListItem/ListItem";
 
 export default function List(props) {
