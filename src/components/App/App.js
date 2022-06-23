@@ -13,7 +13,6 @@ function App() {
   return (
     <div className="App">
       <CreateComponent addTodo={addTodo} />
-      {/* <ToDo todo={todo} /> */}
       <List todos={todos} />
     </div>
   );
