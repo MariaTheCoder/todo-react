@@ -1,10 +1,31 @@
 .CreateComponent {
-    width: 50%;
-    margin: 0 auto;
-    height: 150px;
+  width: 50%;
+  margin: 0 auto;
+  height: 150px;
 
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.input,
+.button {
+  min-height: 50px;
+  padding: 0px;
+  margin: 0;
+  border-width: 0;
+  border-radius: 3px;
+}
+
+.input {
+  padding-left: 15px;
+  width: 250px;
+  min-width: 184px;
+}
+
+.button {
+  margin-left: 20px;
+  width: 60px;
+  min-width: 40px;
 }

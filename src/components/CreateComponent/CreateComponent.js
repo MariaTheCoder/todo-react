@@ -7,11 +7,13 @@ export default function CreateComponent(props) {
   return (
     <div className="CreateComponent">
       <input
+        className="input"
         onChange={(event) => setTempTodo(event.target.value)}
         placeholder="new to-do"
         type="text"
       ></input>
       <button
+        className="button"
         id="add_btn"
         onClick={() => {
           props.setTodo(tempTodo);
