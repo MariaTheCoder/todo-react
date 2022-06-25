@@ -29,3 +29,7 @@
   width: 60px;
   min-width: 40px;
 }
+
+.button:hover {
+  background-color: rgb(101, 99, 99);
+}
