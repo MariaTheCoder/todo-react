@@ -4,6 +4,7 @@ export default function Actionbar(props) {
   return (
     <div className="Actionbar">
       <button
+        className="deleteTodosBtn"
         onClick={() => {
           props.setTodos([]);
         }}
