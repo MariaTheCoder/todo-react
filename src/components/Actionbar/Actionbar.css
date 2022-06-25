@@ -19,3 +19,7 @@
   border-radius: 3px;
   box-shadow: 0 0 10px rgb(142, 31, 31) inset;
 }
+
+.deleteTodosBtn:hover {
+  background-color: rgb(209, 32, 32);
+}
