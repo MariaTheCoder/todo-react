@@ -2,6 +2,7 @@ import "./App.css";
 import { useState } from "react";
 import CreateComponent from "../CreateComponent/CreateComponent";
 import List from "../List/List";
+import Actionbar from "../Actionbar/Actionbar";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
       <CreateComponent addTodo={addTodo} />
       <List todos={todos} />
+      <Actionbar />
     </div>
   );
 }
