@@ -8,3 +8,7 @@
   align-items: flex-end;
   justify-content: center;
 }
+
+.Selected {
+  text-decoration: line-through;
+}
