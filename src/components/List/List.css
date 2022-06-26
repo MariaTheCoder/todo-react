@@ -6,3 +6,9 @@
   padding: 15px;
   background-color: rgb(168, 121, 63);
 }
+
+.hr {
+  height: 0;
+  border: 0;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.5);
+}
