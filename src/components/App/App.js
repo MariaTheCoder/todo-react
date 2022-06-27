@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <CreateComponent addTodo={addTodo} />
       <List todos={todos} />
-      <Actionbar setTodos={setTodos} />
+      <Actionbar todos={todos} setTodos={setTodos} />
     </div>
   );
 }

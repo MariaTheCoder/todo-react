@@ -6,10 +6,11 @@ export default function ToDo(props) {
 
   const handleChange = (event) => {
     if (event.target.checked) {
-      console.log("I was checked");
+      // console.log("I was checked");
       event.target.className = "Selected";
     } else {
-      console.log("I was un-checked");
+      // console.log("I was un-checked");
+      event.target.className = "";
     }
     setIsChecked(!isChecked);
   };
@@ -18,7 +19,7 @@ export default function ToDo(props) {
     <li className={isChecked === true ? "ToDo Selected" : "ToDo"}>
       <label>
         <input type="checkbox" onChange={handleChange} />
-        {props.todo}
+        {props.todo.task}
       </label>
     </li>
   );
