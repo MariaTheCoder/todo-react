@@ -2,19 +2,13 @@ import "./CreateComponent.css";
 import { useState } from "react";
 
 export default function CreateComponent(props) {
-  const [newTodo, setNewTodo] = useState({});
+  const [newTodo, setNewTodo] = useState("");
 
   return (
     <div className="CreateComponent">
       <input
         className="input"
-        onChange={(event) =>
-          setNewTodo({
-            id: props.todos.length,
-            task: event.target.value,
-            isChecked: false,
-          })
-        }
+        onChange={(event) => setNewTodo(event.target.value)}
         placeholder="new to-do"
         type="text"
         value={newTodo.task}
@@ -23,8 +17,12 @@ export default function CreateComponent(props) {
         className="button"
         id="add_btn"
         onClick={() => {
-          props.addTodo(newTodo);
-          setNewTodo({});
+          props.addTodo({
+            id: props.todos.length,
+            isChecked: false,
+            task: newTodo,
+          });
+          setNewTodo("");
         }}
       >
         Add
