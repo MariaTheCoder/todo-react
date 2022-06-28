@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      <CreateComponent addTodo={addTodo} />
+      <CreateComponent todos={todos} addTodo={addTodo} />
       <List todos={todos} />
       <Actionbar todos={todos} setTodos={setTodos} />
     </div>
