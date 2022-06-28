@@ -11,10 +11,18 @@ function App() {
     setTodos([...todos, newTodo]);
   }
 
+  function checkTodo(id) {
+    const newListOfTodos = [...todos];
+    const foundTodo = newListOfTodos.find((todo) => todo.id === id);
+    foundTodo.isChecked = !foundTodo.isChecked;
+
+    setTodos(newListOfTodos);
+  }
+
   return (
     <div className="App">
       <CreateComponent todos={todos} addTodo={addTodo} />
-      <List todos={todos} />
+      <List todos={todos} checkTodo={checkTodo} />
       <Actionbar todos={todos} setTodos={setTodos} />
     </div>
   );

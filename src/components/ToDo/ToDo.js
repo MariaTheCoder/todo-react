@@ -1,18 +1,14 @@
 import "./ToDo.css";
 
 export default function ToDo(props) {
-  const toggleIsChecked = () => {
-    props.todo.isChecked = !props.todo.isChecked;
-  };
-
   return (
     <li className="ToDo">
       <label>
         <input
           type="checkbox"
-          onChange={toggleIsChecked}
+          onChange={() => props.checkTodo(props.todo.id)}
           id={props.todo.id}
-          value={props.todo.task}
+          checked={props.todo.isChecked}
         />
         {props.todo.task}
       </label>
