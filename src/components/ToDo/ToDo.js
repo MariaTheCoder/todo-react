@@ -1,4 +1,5 @@
 import "./ToDo.css";
+import CreateEditButton from "../EditButton/CreateEditButton";
 
 export default function ToDo(props) {
   return (
@@ -12,6 +13,7 @@ export default function ToDo(props) {
         />
         {props.todo.task}
       </label>
+      <CreateEditButton todo={props.todo} editTodo={props.editTodo} />
     </li>
   );
 }

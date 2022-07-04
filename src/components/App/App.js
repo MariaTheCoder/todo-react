@@ -19,10 +19,19 @@ function App() {
     setTodos(newListOfTodos);
   }
 
+  function editTodo(id) {
+    const newListOfTodos = [...todos];
+    const foundTodo = newListOfTodos.find((todo) => todo.id === id);
+    foundTodo.inEditMode = !foundTodo.inEditMode;
+    // console.log(foundTodo.inEditMode);
+
+    setTodos(newListOfTodos);
+  }
+
   return (
     <div className="App">
       <CreateComponent todos={todos} addTodo={addTodo} />
-      <List todos={todos} checkTodo={checkTodo} />
+      <List todos={todos} checkTodo={checkTodo} editTodo={editTodo} />
       <Actionbar todos={todos} setTodos={setTodos} />
     </div>
   );

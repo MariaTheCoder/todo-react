@@ -8,7 +8,12 @@ export default function List(props) {
       <hr className="hr"></hr>
       <div>
         {props.todos.map((todo, index) => (
-          <ToDo key={index} todo={todo} checkTodo={props.checkTodo} />
+          <ToDo
+            key={index}
+            todo={todo}
+            checkTodo={props.checkTodo}
+            editTodo={props.editTodo}
+          />
         ))}
       </div>
     </div>

@@ -21,6 +21,7 @@ export default function CreateComponent(props) {
             id: props.todos.length,
             isChecked: false,
             task: newTodo,
+            inEditMode: false,
           });
           setNewTodo("");
         }}
