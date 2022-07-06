@@ -12,7 +12,7 @@ export default function List(props) {
             key={index}
             todo={todo}
             checkTodo={props.checkTodo}
-            editTodo={props.editTodo}
+            toggleInEditMode={props.toggleInEditMode}
           />
         ))}
       </div>

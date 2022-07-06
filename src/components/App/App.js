@@ -19,11 +19,11 @@ function App() {
     setTodos(newListOfTodos);
   }
 
-  function editTodo(id) {
+  function toggleInEditMode(id) {
     const newListOfTodos = [...todos];
     const foundTodo = newListOfTodos.find((todo) => todo.id === id);
     foundTodo.inEditMode = !foundTodo.inEditMode;
-    // console.log(foundTodo.inEditMode);
+    console.log(foundTodo.inEditMode);
 
     setTodos(newListOfTodos);
   }
@@ -31,7 +31,11 @@ function App() {
   return (
     <div className="App">
       <CreateComponent todos={todos} addTodo={addTodo} />
-      <List todos={todos} checkTodo={checkTodo} editTodo={editTodo} />
+      <List
+        todos={todos}
+        checkTodo={checkTodo}
+        toggleInEditMode={toggleInEditMode}
+      />
       <Actionbar todos={todos} setTodos={setTodos} />
     </div>
   );
