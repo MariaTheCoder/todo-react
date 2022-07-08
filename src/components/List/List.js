@@ -13,6 +13,9 @@ export default function List(props) {
             todo={todo}
             checkTodo={props.checkTodo}
             toggleInEditMode={props.toggleInEditMode}
+            todoToEdit={props.todoToEdit}
+            setTodoToEdit={props.setTodoToEdit}
+            saveTodoEdit={props.saveTodoEdit}
           />
         ))}
       </div>

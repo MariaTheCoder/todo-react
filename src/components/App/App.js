@@ -6,6 +6,7 @@ import Actionbar from "../Actionbar/Actionbar";
 
 function App() {
   const [todos, setTodos] = useState([]);
+  const [todoToEdit, setTodoToEdit] = useState("");
 
   function addTodo(newTodo) {
     setTodos([...todos, newTodo]);
@@ -23,7 +24,16 @@ function App() {
     const newListOfTodos = [...todos];
     const foundTodo = newListOfTodos.find((todo) => todo.id === id);
     foundTodo.inEditMode = !foundTodo.inEditMode;
-    console.log(foundTodo.inEditMode);
+    // console.log(foundTodo.inEditMode);
+
+    setTodos(newListOfTodos);
+  }
+
+  function saveTodoEdit(id) {
+    const newListOfTodos = [...todos];
+    const foundTodo = newListOfTodos.find((todo) => todo.id === id);
+    foundTodo.task = todoToEdit;
+    console.log(foundTodo);
 
     setTodos(newListOfTodos);
   }
@@ -35,6 +45,9 @@ function App() {
         todos={todos}
         checkTodo={checkTodo}
         toggleInEditMode={toggleInEditMode}
+        todoToEdit={todoToEdit}
+        setTodoToEdit={setTodoToEdit}
+        saveTodoEdit={saveTodoEdit}
       />
       <Actionbar todos={todos} setTodos={setTodos} />
     </div>

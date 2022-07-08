@@ -1,11 +1,8 @@
 import "./ToDo.css";
 import EditButton from "../EditButton/EditButton";
 import SaveEditButton from "../SaveEditButton/SaveEditButton";
-import { useState } from "react";
 
 export default function ToDo(props) {
-  const [editableTodo, setEditableTodo] = useState(props.todo.task);
-  const [tempTodo, setTempTodo] = useState("");
   const isEditable = props.todo.inEditMode;
 
   if (isEditable) {
@@ -21,13 +18,15 @@ export default function ToDo(props) {
           <input
             type="text"
             id={props.todo.id}
-            defaultValue={editableTodo}
-            onChange={(event) => setTempTodo(event.target.value)}
+            defaultValue={props.todo.task}
+            onChange={(event) => props.setTodoToEdit(event.target.value)}
           />
         </label>
         <SaveEditButton
           todo={props.todo}
           toggleInEditMode={props.toggleInEditMode}
+          todoToEdit={props.todoToEdit}
+          saveTodoEdit={props.saveTodoEdit}
         />
       </li>
     );
