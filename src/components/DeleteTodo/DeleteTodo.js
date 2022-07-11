@@ -1,3 +1,5 @@
+import "./DeleteTodo.css";
+
 export default function DeleteTodo(props) {
   return (
     <div
