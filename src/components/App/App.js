@@ -24,7 +24,6 @@ function App() {
     const newListOfTodos = [...todos];
     const foundTodo = newListOfTodos.find((todo) => todo.id === id);
     foundTodo.inEditMode = !foundTodo.inEditMode;
-    // console.log(foundTodo.inEditMode);
 
     setTodos(newListOfTodos);
   }
@@ -33,7 +32,6 @@ function App() {
     const newListOfTodos = [...todos];
     const foundTodo = newListOfTodos.find((todo) => todo.id === id);
     foundTodo.task = todoToEdit;
-    console.log(foundTodo);
 
     setTodos(newListOfTodos);
   }
