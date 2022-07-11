@@ -1,6 +1,7 @@
 import "./ToDo.css";
 import EditButton from "../EditButton/EditButton";
 import SaveEditButton from "../SaveEditButton/SaveEditButton";
+import DeleteTodo from "../DeleteTodo/DeleteTodo";
 
 export default function ToDo(props) {
   const isEditable = props.todo.inEditMode;
@@ -28,6 +29,10 @@ export default function ToDo(props) {
           todoToEdit={props.todoToEdit}
           saveTodoEdit={props.saveTodoEdit}
         />
+        <DeleteTodo
+          todo={props.todo}
+          deleteSpecificTodo={props.deleteSpecificTodo}
+        />
       </li>
     );
   }
@@ -43,6 +48,10 @@ export default function ToDo(props) {
         {props.todo.task}
       </label>
       <EditButton todo={props.todo} toggleInEditMode={props.toggleInEditMode} />
+      <DeleteTodo
+        todo={props.todo}
+        deleteSpecificTodo={props.deleteSpecificTodo}
+      />
     </li>
   );
 }

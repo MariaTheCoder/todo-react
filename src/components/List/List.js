@@ -16,6 +16,7 @@ export default function List(props) {
             todoToEdit={props.todoToEdit}
             setTodoToEdit={props.setTodoToEdit}
             saveTodoEdit={props.saveTodoEdit}
+            deleteSpecificTodo={props.deleteSpecificTodo}
           />
         ))}
       </div>

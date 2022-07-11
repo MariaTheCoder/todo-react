@@ -36,6 +36,14 @@ function App() {
     setTodos(newListOfTodos);
   }
 
+  function deleteSpecificTodo(id) {
+    const newListOfTodos = [...todos];
+    const indexOfFoundTodo = newListOfTodos.findIndex((todo) => todo.id === id);
+    newListOfTodos.splice(indexOfFoundTodo, 1);
+
+    setTodos(newListOfTodos);
+  }
+
   return (
     <div className="App">
       <CreateComponent todos={todos} addTodo={addTodo} />
@@ -46,6 +54,7 @@ function App() {
         todoToEdit={todoToEdit}
         setTodoToEdit={setTodoToEdit}
         saveTodoEdit={saveTodoEdit}
+        deleteSpecificTodo={deleteSpecificTodo}
       />
       <Actionbar todos={todos} setTodos={setTodos} />
     </div>
