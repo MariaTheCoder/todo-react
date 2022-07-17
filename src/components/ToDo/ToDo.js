@@ -20,7 +20,10 @@ export default function ToDo(props) {
             type="text"
             id={props.todo.id}
             defaultValue={props.todo.task}
-            onChange={(event) => props.setTodoToEdit(event.target.value)}
+            onChange={(event) => {
+              props.setTodoToEdit(event.target.value);
+              props.setInputHasChanged(true);
+            }}
           />
         </label>
         <SaveEditButton
