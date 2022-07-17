@@ -10,7 +10,10 @@ export default function Actionbar(props) {
 
   return (
     <div className="Actionbar">
-      <button class="deleteCheckedTodosBtn" onClick={clearCheckedTodosHandler}>
+      <button
+        className="deleteCheckedTodosBtn"
+        onClick={clearCheckedTodosHandler}
+      >
         Clear checked to-dos
       </button>
       <button
