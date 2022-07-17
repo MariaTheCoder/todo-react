@@ -9,6 +9,11 @@
   justify-content: center;
 }
 
+label {
+  font-family: Caveat, sans-serif;
+  font-size: 30px;
+}
+
 .Selected {
   text-decoration: line-through;
 }
