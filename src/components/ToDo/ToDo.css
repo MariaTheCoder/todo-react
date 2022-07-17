@@ -9,9 +9,17 @@
   justify-content: center;
 }
 
+li {
+  display: block;
+  width: 5000px;
+}
+
 label {
   font-family: Caveat, sans-serif;
   font-size: 30px;
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .line-small {
