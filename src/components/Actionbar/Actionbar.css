@@ -9,7 +9,7 @@
 }
 
 .deleteTodosBtn {
-  min-height: 50px;
+  min-height: 40px;
   min-width: fit-content;
   padding: 0 15px 0 15px;
   background-color: red;
@@ -17,8 +17,28 @@
   border-width: 0;
   border-radius: 3px;
   box-shadow: 0 0 10px rgb(142, 31, 31) inset;
+  color: white;
+  font-size: 14px;
 }
 
 .deleteTodosBtn:hover {
   background-color: rgb(209, 32, 32);
+}
+
+.deleteCheckedTodosBtn {
+  min-height: 40px;
+  min-width: fit-content;
+  padding: 0 15px 0 15px;
+  background-color: rgb(228, 128, 70);
+  margin: 0;
+  border-width: 0;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgb(237, 83, 41) inset;
+  color: white;
+  font-size: 14px;
+  margin-right: 25px;
+}
+
+.deleteCheckedTodosBtn:hover {
+  background-color: rgb(221, 94, 35);
 }
