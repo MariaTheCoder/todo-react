@@ -5,7 +5,7 @@ export default function List(props) {
   return (
     <div className="List">
       <h1>To-do List</h1>
-      <hr className="hr"></hr>
+      <div className="line-large"></div>
       <div>
         {props.todos.map((todo, index) => (
           <ToDo
