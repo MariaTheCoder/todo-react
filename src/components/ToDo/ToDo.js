@@ -8,7 +8,7 @@ export default function ToDo(props) {
 
   if (isEditable) {
     return (
-      <li className="ToDo">
+      <li className="ToDo grid-container">
         <label>
           <input
             type="checkbox"
