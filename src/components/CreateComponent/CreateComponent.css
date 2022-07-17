@@ -27,13 +27,15 @@
 }
 
 .button {
-  background-color: #d89ea7;
+  background-color: #ed99a4;
+  box-shadow: 0 0 10px #e9b6bd inset;
+  color: white;
   margin-left: 20px;
   width: 60px;
   min-width: 40px;
 }
 
 .button:hover {
-  background-color: #efa8b2;
-  box-shadow: 0 0 10px #d97e8c inset;
+  background-color: #d97d89;
+  box-shadow: 0 0 10px #d8939e inset;
 }
