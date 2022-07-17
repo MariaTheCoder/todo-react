@@ -8,10 +8,12 @@ export default function CreateComponent(props) {
     <div className="CreateComponent">
       <input
         className="input"
-        onChange={(event) => setNewTodo(event.target.value)}
+        onChange={(event) => {
+          setNewTodo(event.target.value);
+        }}
         placeholder="new to-do"
         type="text"
-        value={newTodo.task}
+        value={newTodo}
       ></input>
       <button
         className="button"
