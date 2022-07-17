@@ -10,6 +10,7 @@ function App() {
   const [inputHasChanged, setInputHasChanged] = useState(false);
 
   function addTodo(newTodo) {
+    if (newTodo.task.length === 0) return alert("Please write a text");
     setTodos([...todos, newTodo]);
   }
 
