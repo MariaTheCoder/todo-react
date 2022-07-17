@@ -38,7 +38,7 @@ export default function ToDo(props) {
   }
   return (
     <>
-      <li className="ToDo">
+      <li className="ToDo grid-container">
         <label>
           <input
             type="checkbox"
