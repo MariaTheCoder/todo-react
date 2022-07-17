@@ -37,21 +37,27 @@ export default function ToDo(props) {
     );
   }
   return (
-    <li className="ToDo">
-      <label>
-        <input
-          type="checkbox"
-          onChange={() => props.checkTodo(props.todo.id)}
-          id={props.todo.id}
-          checked={props.todo.isChecked}
+    <>
+      <li className="ToDo">
+        <label>
+          <input
+            type="checkbox"
+            onChange={() => props.checkTodo(props.todo.id)}
+            id={props.todo.id}
+            checked={props.todo.isChecked}
+          />
+          {props.todo.task}
+        </label>
+        <EditButton
+          todo={props.todo}
+          toggleInEditMode={props.toggleInEditMode}
         />
-        {props.todo.task}
-      </label>
-      <EditButton todo={props.todo} toggleInEditMode={props.toggleInEditMode} />
-      <DeleteTodo
-        todo={props.todo}
-        deleteSpecificTodo={props.deleteSpecificTodo}
-      />
-    </li>
+        <DeleteTodo
+          todo={props.todo}
+          deleteSpecificTodo={props.deleteSpecificTodo}
+        />
+      </li>
+      <div className="line-small"></div>
+    </>
   );
 }
