@@ -42,3 +42,15 @@
 .deleteCheckedTodosBtn:hover {
   background-color: rgb(150, 117, 59);
 }
+
+@media only screen and (max-width: 500px) {
+  .deleteCheckedTodosBtn {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .deleteTodosBtn {
+    width: 100%;
+    margin: 5px 0;
+  }
+}

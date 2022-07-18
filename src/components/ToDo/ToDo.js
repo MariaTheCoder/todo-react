@@ -17,6 +17,7 @@ export default function ToDo(props) {
             checked={props.todo.isChecked}
           />
           <input
+            class="correct-todo"
             type="text"
             id={props.todo.id}
             defaultValue={props.todo.task}
@@ -42,7 +43,7 @@ export default function ToDo(props) {
   return (
     <>
       <li className="ToDo grid-container">
-        <label>
+        <label class="todo-container">
           <input
             type="checkbox"
             onChange={() => props.checkTodo(props.todo.id)}

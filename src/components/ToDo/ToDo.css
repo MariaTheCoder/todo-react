@@ -14,7 +14,7 @@ li {
   width: 5000px;
 }
 
-label {
+.todo-container {
   font-family: Caveat, sans-serif;
   font-size: 30px;
   display: inline-block;
@@ -27,7 +27,7 @@ label {
   box-shadow: 0 0 2px 0.5px rgba(37, 115, 193, 0.5);
 }
 
-input[type="text"] {
+.correct-todo {
   font-family: Caveat, sans-serif;
   font-size: 25px;
 }
@@ -38,5 +38,20 @@ input[type="text"] {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 500px auto 30px 30px;
+  grid-template-columns: 350px auto 10px 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  .todo-container {
+    width: 100%;
+    font-size: 15px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 200px auto 30px 30px;
+  }
+
+  .correct-todo {
+    font-size: 18px;
+  }
 }

@@ -1,6 +1,7 @@
 .CreateComponent {
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
+  padding: 0 15px;
   height: 150px;
 
   display: flex;
@@ -38,4 +39,27 @@
 .button:hover {
   background-color: #d97d89;
   box-shadow: 0 0 10px #d8939e inset;
+}
+
+@media only screen and (max-width: 500px) {
+  .CreateComponent {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .button {
+    min-height: 40px;
+    width: 100%;
+    margin: 5px 0;
+    padding: 0 15px;
+  }
+
+  .input {
+    min-height: 40px;
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
 }
