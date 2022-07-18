@@ -8,36 +8,40 @@ export default function ToDo(props) {
 
   if (isEditable) {
     return (
-      <li className="ToDo grid-container">
-        <label>
-          <input
-            type="checkbox"
-            onChange={() => props.checkTodo(props.todo.id)}
-            id={props.todo.id}
-            checked={props.todo.isChecked}
+      <>
+        <li className="ToDo grid-container">
+          <label>
+            <input
+              class="checkbox"
+              type="checkbox"
+              onChange={() => props.checkTodo(props.todo.id)}
+              id={props.todo.id}
+              checked={props.todo.isChecked}
+            />
+            <input
+              class="correct-todo"
+              type="text"
+              id={props.todo.id}
+              defaultValue={props.todo.task}
+              onChange={(event) => {
+                props.setTodoToEdit(event.target.value);
+                props.setInputHasChanged(true);
+              }}
+            />
+          </label>
+          <SaveEditButton
+            todo={props.todo}
+            toggleInEditMode={props.toggleInEditMode}
+            todoToEdit={props.todoToEdit}
+            saveTodoEdit={props.saveTodoEdit}
           />
-          <input
-            class="correct-todo"
-            type="text"
-            id={props.todo.id}
-            defaultValue={props.todo.task}
-            onChange={(event) => {
-              props.setTodoToEdit(event.target.value);
-              props.setInputHasChanged(true);
-            }}
+          <DeleteTodo
+            todo={props.todo}
+            deleteSpecificTodo={props.deleteSpecificTodo}
           />
-        </label>
-        <SaveEditButton
-          todo={props.todo}
-          toggleInEditMode={props.toggleInEditMode}
-          todoToEdit={props.todoToEdit}
-          saveTodoEdit={props.saveTodoEdit}
-        />
-        <DeleteTodo
-          todo={props.todo}
-          deleteSpecificTodo={props.deleteSpecificTodo}
-        />
-      </li>
+        </li>
+        <div className="line-small"></div>
+      </>
     );
   }
   return (

@@ -30,7 +30,12 @@ li {
   box-shadow: 0 0 2px 0.5px rgba(37, 115, 193, 0.5);
 }
 
+.checkbox {
+  text-align: left;
+  margin-left: 10%;
+}
 .correct-todo {
+  width: 80%;
   font-family: Caveat, sans-serif;
   font-size: 25px;
 }

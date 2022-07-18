@@ -5,11 +5,9 @@
 }
 
 .App {
-  text-align: center;
   background-image: url("/public/planning.jpg");
   background-attachment: fixed;
   background-size: cover;
-  /* filter: opacity(50%); */
   min-width: 100%;
   min-height: 100%;
 }
