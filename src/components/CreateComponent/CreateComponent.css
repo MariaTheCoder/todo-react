@@ -20,6 +20,7 @@
 }
 
 .input {
+  text-align: center;
   padding-left: 15px;
   width: 250px;
   min-width: 184px;
@@ -57,7 +58,6 @@
   .input {
     min-height: 40px;
     width: 100%;
-    text-align: center;
     margin: 5px 0;
     font-size: 16px;
     box-sizing: border-box;
