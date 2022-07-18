@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 0 15px;
   height: 150px;
+  max-width: 700px;
 
   display: flex;
   flex-direction: row;
@@ -32,7 +33,7 @@
   background-color: #ed99a4;
   box-shadow: 0 0 10px #e9b6bd inset;
   color: white;
-  margin-left: 20px;
+  margin: 10px;
   width: 60px;
   min-width: 40px;
 }
