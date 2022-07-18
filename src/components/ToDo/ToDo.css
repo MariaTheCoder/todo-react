@@ -15,6 +15,7 @@ li {
 }
 
 .todo-container {
+  width: 100%;
   font-family: Caveat, sans-serif;
   font-size: 30px;
   display: inline-block;
@@ -37,18 +38,14 @@ li {
 }
 
 .grid-container {
+  width: 100%;
   display: grid;
-  grid-template-columns: 350px auto 10px 10px;
+  grid-template-columns: 80% auto auto;
 }
 
 @media only screen and (max-width: 500px) {
   .todo-container {
-    width: 100%;
     font-size: 15px;
-  }
-  .grid-container {
-    display: grid;
-    grid-template-columns: 200px auto 30px 30px;
   }
 
   .correct-todo {
