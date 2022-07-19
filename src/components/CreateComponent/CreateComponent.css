@@ -1,21 +1,23 @@
 .CreateComponent {
-  width: 80%;
-  margin: 0 auto;
-  padding: 0 15px;
+  width: 100%;
+  margin: auto;
+  /* padding: 0 15px;  */
   height: 150px;
-  max-width: 700px;
+  /* max-width: 700px; */
 
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   align-items: center;
   justify-content: center;
+
+  position: fixed;
+  background-color: white;
+  top: 0;
 }
 
 .input,
 .button {
   min-height: 50px;
-  padding: 0px;
-  margin: 0;
   border-width: 0;
   border-radius: 3px;
 }
@@ -50,6 +52,8 @@
   }
 
   .button {
+    position: fixed;
+    top: 50px;
     min-height: 40px;
     width: 100%;
     margin: 5px 0;
@@ -57,6 +61,8 @@
   }
 
   .input {
+    position: fixed;
+    top: 0;
     min-height: 40px;
     width: 100%;
     margin: 5px 0;
