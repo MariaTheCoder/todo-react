@@ -1,9 +1,16 @@
 .Background {
+  margin-top: 150px;
   background-image: url("/public/planning.jpg");
-  background-position: right top;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   min-width: 100%;
   min-height: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+  .Background {
+    margin-top: 100px;
+  }
 }

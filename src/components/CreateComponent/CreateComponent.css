@@ -8,7 +8,8 @@
   justify-content: center;
 
   position: fixed;
-  background-color: rgb(185, 178, 163);
+  /* background-image: url("/public/planning.jpg"); */
+  background-color: rgb(213, 208, 195);
   top: 0;
   opacity: 0.85;
 }
@@ -47,6 +48,7 @@
   .CreateComponent {
     flex-direction: column;
     padding: 0;
+    height: 100px;
   }
 
   .button {
