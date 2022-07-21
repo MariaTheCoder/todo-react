@@ -8,10 +8,8 @@
   justify-content: center;
 
   position: fixed;
-  /* background-image: url("/public/planning.jpg"); */
-  background-color: rgb(213, 208, 195);
+  background-color: rgba(221, 221, 221, 0.75);
   top: 0;
-  opacity: 0.85;
 }
 
 .input,
@@ -22,10 +20,7 @@
 }
 
 .input {
-  text-align: center;
-  padding-left: 15px;
   width: 250px;
-  min-width: 184px;
   font-family: Caveat, sans-serif;
   font-size: 25px;
 }
@@ -35,8 +30,9 @@
   box-shadow: 0 0 10px #e9b6bd inset;
   color: white;
   margin: 10px;
-  width: 60px;
   min-width: 40px;
+  width: 60px;
+  margin: 10px;
 }
 
 .button:hover {
