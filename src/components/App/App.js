@@ -1,8 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import CreateComponent from "../CreateComponent/CreateComponent";
-import List from "../List/List";
-import Actionbar from "../Actionbar/Actionbar";
+import Notepad from "../Notepad/Notepad";
 
 export default function App() {
   const [todos, setTodos] = useState([]);
@@ -53,17 +52,17 @@ export default function App() {
   return (
     <div className="App">
       <CreateComponent todos={todos} addTodo={addTodo} />
-      <List
+      <Notepad
         todos={todos}
         checkTodo={checkTodo}
         toggleInEditMode={toggleInEditMode}
         todoToEdit={todoToEdit}
+        setTodos={setTodos}
         setTodoToEdit={setTodoToEdit}
         saveTodoEdit={saveTodoEdit}
         deleteSpecificTodo={deleteSpecificTodo}
         setInputHasChanged={setInputHasChanged}
       />
-      <Actionbar todos={todos} setTodos={setTodos} />
     </div>
   );
 }
