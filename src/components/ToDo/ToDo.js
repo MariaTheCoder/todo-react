@@ -47,7 +47,7 @@ export default function ToDo(props) {
   return (
     <>
       <li className="ToDo grid-container">
-        <label class="todo-container">
+        <label className="todo-container">
           <input
             type="checkbox"
             onChange={() => props.checkTodo(props.todo.id)}
