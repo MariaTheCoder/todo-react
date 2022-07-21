@@ -12,14 +12,14 @@ export default function ToDo(props) {
         <li className="ToDo grid-container">
           <label>
             <input
-              class="checkbox"
+              className="checkbox"
               type="checkbox"
               onChange={() => props.checkTodo(props.todo.id)}
               id={props.todo.id}
               checked={props.todo.isChecked}
             />
             <input
-              class="correct-todo"
+              className="correct-todo"
               type="text"
               id={props.todo.id}
               defaultValue={props.todo.task}
