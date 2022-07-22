@@ -7,27 +7,16 @@
   margin-top: 150px;
 }
 
-.line-large {
-  box-shadow: 0 0 2px 2px rgba(37, 115, 193, 0.5);
-  margin-top: -10px;
-}
-
-h1 {
-  text-align: center;
-  font-family: Caveat, sans-serif;
-  font-size: 45px;
-}
-
 @media only screen and (max-width: 500px) {
   .List {
     margin-top: 100px;
   }
 
-  .line-large {
+  /* .line-large {
     margin: -5px;
   }
 
   h1 {
     font-size: 30px;
-  }
+  } */
 }
