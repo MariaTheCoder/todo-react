@@ -19,6 +19,10 @@ h1 {
 }
 
 @media only screen and (max-width: 500px) {
+  .List {
+    margin-top: 100px;
+  }
+
   .line-large {
     margin: -5px;
   }
