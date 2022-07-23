@@ -17,6 +17,7 @@
   min-height: 50px;
   border-width: 0;
   border-radius: 3px;
+  margin: 5px;
 }
 
 .input {
@@ -29,10 +30,8 @@
   background-color: #ed99a4;
   box-shadow: 0 0 10px #e9b6bd inset;
   color: white;
-  margin: 10px;
   min-width: 40px;
   width: 60px;
-  margin: 10px;
 }
 
 .button:hover {
@@ -43,25 +42,28 @@
 @media only screen and (max-width: 500px) {
   .CreateComponent {
     flex-direction: column;
-    padding: 0;
+    margin: 0 auto;
+    width: calc(100% - 30px);
+    padding: 10px 15px;
     height: 100px;
+    flex-direction: column;
+  }
+
+  .input,
+  .button {
+    position: fixed;
+    min-height: 40px;
+    width: calc(100% - 30px);
+    margin: auto;
+    left: 15px;
   }
 
   .button {
-    position: fixed;
-    top: 50px;
-    min-height: 40px;
-    width: 100%;
-    margin: 5px 0;
-    padding: 0 15px;
+    top: 65px;
   }
 
   .input {
-    position: fixed;
-    top: 0;
-    min-height: 40px;
-    width: 100%;
-    margin: 5px 0;
+    top: 15px;
     font-size: 16px;
     box-sizing: border-box;
   }
