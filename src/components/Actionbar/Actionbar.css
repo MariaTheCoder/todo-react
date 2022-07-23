@@ -43,13 +43,10 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .deleteCheckedTodosBtn {
-    width: 100%;
-    margin: 5px 0;
-  }
-
+  .deleteCheckedTodosBtn,
   .deleteTodosBtn {
     width: 100%;
     margin: 5px 0;
+    padding: 0;
   }
 }
